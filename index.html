@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        overflow: hidden;
+    }
+
+    .site {
+        width: 100vw;
+        height: 100vh;
+        width: 100dvw;
+        height: 100dvh;
+        background-color: hsl(0, 0%, 100%);
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .conteiner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .content {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .image {
+        width: 30%;
+    }
+
+    .stack {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        padding: 0.5rem 0.8rem;
+        background-color: black;
+        border-radius: 1rem;
+        color: white;
+    }
+
+    @media (max-width:900px) {
+        
+        body {
+            overflow: auto;
+        }
+        .site {
+            min-height: 100vh;
+            min-height: 100dvh;
+            height: auto;
+            width: auto;
+        }
+        
+        .conteiner {
+            flex-direction: column;
+        }
+
+        .content {
+            width: 80%;
+        }
+    }
+</style>
+
+<body>
+    <main class="site">
+        <section class="conteiner">
+            <img src="./photo/beautiful-cat-portrait-isolated_23-2150186058.avif" alt="" class="image">
+            <div class="content">
+                <h1 class="fullName">Бля</h1>
+                <p class="info">Любит жрать это домашнее животное, вид мелкого хищного млекопитающего Это единственный
+                    одомашненный вид семейства кошачьих. Кошка — одна из наиболее популярных животных-компаньонов. Кошка
+                    считается социальным животным, использующим для общения широкий диапазон звуковых сигналов, феромоны
+                    и движения тела.</p>
+                <div class="stack">
+                    <div class="btn">HTML</div>
+                    <div class="btn">CSS</div>
+                    <div class="btn">JavaScript</div>
+                    <div class="btn">Node</div>
+                    <div class="btn">React</div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
